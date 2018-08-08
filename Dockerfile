@@ -8,7 +8,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get install -y php7.0-gd php-curl php7.0-zip php7.0-xml php7.0-mbstring 
+RUN apt-get install -y php7.0-gd php-curl php7.0-zip php7.0-xml php7.0-mbstring git
 
 # Remove packge files
 RUN rm -r /var/lib/apt/lists/*
